@@ -1,0 +1,48 @@
+.container{
+	width: 100%;
+	height: 100%;
+/*	height: 1000px;*/
+	background: url(../hantiaoimg/bg_266b0fc.jpg)0 -68px no-repeat #1E1916;
+	/*background: #1E1916;*/
+	padding-top: 68px;
+	
+}
+.container .title-01{
+	display: block;
+    width: 416px;
+    height: 60px;
+    margin: 0 auto;
+    margin-top: 360px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 38px;
+    font-weight: 700;
+    color: #866f4e;
+    background: url(../hantiaoimg/title_c0f8187.png);
+}
+.container .teach{
+	text-align: center;
+	width: 100%;
+	height: 56px;
+	margin-top: 50px;
+	border-bottom: 1px solid white;
+}
+.teach i{
+	display: inline-block;
+	width: auto;
+    margin: 0 30px;
+    height: 46px;
+    color: #a78f68;
+    padding-top: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    font-style: normal;
+}
+.main{
+	width: 1120px;
+	color: #f0c992;
+	font: 18px/2em "微软雅黑";
+	text-indent: 2em;
+	box-shadow: 10px 10px 10px 5px #000000;
+	margin: 0 auto;
+}

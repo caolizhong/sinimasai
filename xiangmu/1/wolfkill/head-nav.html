@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<!--导航-->
+		<div class="head">
+			<div class="contain">
+				<ul>
+					<li><a href="index.html">首页</a></li>
+					<li>官方渠道
+						<div class="twith-one">
+							<a href="#">官方论坛
+								<div>
+									<img src="img/luntan_6e95156.png"/>
+								</div>
+							</a>
+							<a href="#">官方微博
+								<div id="">
+									<img src="img/weibo_ewm_b4789d7.png"/>
+								</div>
+							</a>
+							<a href="#">官方微信
+								<div id="">
+									<img src="img/weixin_ewm_10014a1.png"/>
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="card-show">卡牌展示
+						
+					</li>
+					<li>玩法研究所
+						<div class="twith-two">
+							<a href="player/player.html">玩法游戏介绍
+							</a>
+							<a href="the last.html">原创特色玩法
+							</a>
+						</div>
+					</li>
+					<li>悍跳学院
+						<div class="twith-three">
+							<a href="third.html">萌新攻略
+							</a>
+							<a href="third.html">角色攻略
+							</a>
+							<a href="third.html">悍跳教学
+							</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
+<script>
+	$(".card-show").click(function(){
+		$(".mmma").slideDown()
+	})
+	$(".mmma").click(function(){
+		$(this).slideUp()
+	})
+	$(".head li").hover(function(){
+		$(this).find("div").stop().slideDown()
+	},function(){
+		$(this).find("div").stop().slideUp()
+	})
+</script>

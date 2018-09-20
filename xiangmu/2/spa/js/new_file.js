@@ -1,0 +1,18 @@
+$(function(){
+	$("#bb1").click(function(){
+		$(".bl").show()
+		$(".k1").hide()
+		$(".n1").hide()
+	})
+	$("#bb2").click(function(){
+		$(".k1").show()
+		$(".bl").hide()
+		$(".n1").hide()
+		console.log(1)
+	})
+	$("#bb3").click(function(){
+		$(".n1").show()
+		$(".k1").hide()
+		$(".bl").hide()
+	})
+})

@@ -1,0 +1,21 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+img{
+	vertical-align: top;
+	border: 0 none;
+}
+ul,li{
+	list-style: none;
+}
+img{
+	width: 100%;
+}
+
+.img-box{
+	width: 100%;
+}
+.img-box img{
+	width: 100%;
+}

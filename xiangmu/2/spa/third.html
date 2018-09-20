@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/third.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+	</head>
+	<body>
+		<div class="head-three"></div>
+		<div class="container">
+			<div class="row context">
+				<ul class="clearfix">
+					<li class="col-lg-7 col-md-12"><img src="img/images/about_01.png"/></li>
+					<li class="glyphicon glyphicon-chevron-down hidden-lg col-sm-12 arrow-down"></li>
+					<li class="col-lg-5 hidden-sm ">
+						<h1 class="text-success">Partner</h1>
+						<p>detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess 
+							detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+						</p>
+					</li>
+				</ul>
+				<ul class="clearfix">
+					<li class="col-lg-5 hidden-sm ">
+						<h1 class="text-success">Partner</h1>
+						<p>detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+							detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+						</p>
+					</li>
+					<li class="glyphicon glyphicon-chevron-up hidden-lg col-sm-12 arrow-up"></li>
+					<li class="col-lg-7 col-md-12"><img src="img/images/about_02.png"/></li>
+				</ul>
+				<ul class="clearfix">
+					<li class="col-lg-7 col-md-12"><img src="img/images/about_03.png"/></li>
+					<li class="glyphicon glyphicon-chevron-down hidden-lg col-sm-12 arrow-down"></li>
+					<li class="col-lg-5 hidden-sm ">
+						<h1 class="text-success">Partner</h1>
+						<p>detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+							detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+						</p>
+					</li>
+				</ul>
+				<ul class="clearfix">
+					<li class="col-lg-5 hidden-sm ">
+						<h class="text-success">Partner</h1>
+						<p>detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+							detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+						</p>
+					</li>
+					<li class="glyphicon glyphicon-chevron-up hidden-lg col-sm-12 arrow-up"></li>
+					<li class="col-lg-7 col-md-12"><img src="img/images/about_04.png"/></li>
+				</ul>
+				<ul class="clearfix">
+					<li class="col-lg-7 col-md-12"><img src="img/images/about_05.png"/></li>
+					<li class="glyphicon glyphicon-chevron-down hidden-lg col-sm-12 arrow-down"></li>
+					<li class="col-lg-5 hidden-sm">
+						<h1 class="text-success">Partner</h1>
+						<p>detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+							detective to love and respect.Enhance human intergtity and creativity and share the company'sucsess
+						</p>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="foot-three">
+			
+		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$(".foot-three").load("foot.html")
+		$(".head-three").load("header.html")
+		$(".arrow-down").click(function(){
+		console.log(1)
+		$(this).next().toggleClass("hidden-sm")
+		$(this).toggleClass("glyphicon glyphicon-chevron-down").toggleClass("glyphicon glyphicon-chevron-up")
+		})
+		
+		$(".arrow-up").click(function(){
+			console.log(1)
+			$(this).prev().toggleClass("hidden-sm")
+			$(this).toggleClass("glyphicon glyphicon-chevron-down").toggleClass("glyphicon glyphicon-chevron-up")
+		})
+	})
+	/*window.onload = function(){
+		$(".second-nav").children().children().eq(2).css("background","#6EA145")
+	}*/
+</script>

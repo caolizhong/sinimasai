@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+	</head>
+	<body>
+	<div class="section-spe">	
+		<div class="container">
+			<div class="row">
+				<ul class="header-nav">
+				<li class="col-lg-1 first col-md-2 col-xs-2 col-xs-2">
+					<p class="first-word">
+						<span class="glyphicon glyphicon-leaf"></span>
+						<span>Spa</span>
+					</p>
+					<p class="second-word">
+						Magic of soul
+					</p>
+				</li>
+				<li class="col-md-10 col-sm-10 col-xs-10 visible-md visible-sm visible-xs spe">
+					<span class="glyphicon glyphicon-align-justify"></span>
+				</li>
+				<li class="col-lg-7 hidden-md hidden-sm hidden-xs">
+					<ul class="second-nav">
+						<a href="index.html#0">
+							<li class="col-lg-2 row">
+							<p>Home</p>
+							<p class="glyphicon glyphicon-home"></p>
+						</li>
+						</a>
+						<a href="second.html#1">
+							<li class="col-lg-2 row">
+							<p>Service</p>
+							<p class="glyphicon glyphicon-hand-right"></p>
+						</li>
+						</a>
+						<a href="third.html#2">
+							<li class="col-lg-2 row">
+							<p>About</p>
+							<p class="glyphicon glyphicon-star-empty"></p>
+						</li>
+						</a>
+						<a href="forth.html#3">
+							<li class="col-lg-2 row">
+							<p>Blog</p>
+							<p class="glyphicon glyphicon-picture"></p>
+						</li>
+						</a>
+						<a href="five.html#4">
+							<li class="col-lg-2 row">
+							<p>Contaxt</p>
+							<p class="glyphicon glyphicon-envelope"></p>
+						</li>
+						</a>
+					</ul>
+				</li>
+				<li class="col-lg-4 hidden-md hidden-sm hidden-xs">
+					<div class="pics">
+						<span class="pics-one"></span>
+						<span class="pics-two"></span>
+						<span class="pics-three"></span>
+					</div>
+				</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid box">
+		<ul>
+			<a href="index.html#0">
+				<li>
+				<p>Home</p>
+				<p class="glyphicon glyphicon-home"></p>
+			</li>
+			</a>
+			<a href="second.html#1">
+				<li>
+				<p>Service</p>
+				<p class="glyphicon glyphicon-hand-right"></p>
+			</li>
+			</a>
+			<a href="third.html#2">
+				<li>
+				<p>About</p>
+				<p class="glyphicon glyphicon-star-empty"></p>
+			</li>
+			</a>
+			<a href="forth.html#3">
+				<li>
+				<p>Blog</p>
+				<p class="glyphicon glyphicon-picture"></p>
+			</li>
+			</a>
+			<a href="five.html#4">
+				<li>
+				<p>Contaxt</p>
+				<p class="glyphicon glyphicon-envelope"></p>
+			</li>
+			</a>
+			<a href="##">
+				<li class="qiqiqi">
+				<p class="glyphicon glyphicon-chevron-up"></p>
+				<p>收起</p>
+				
+			</li>
+			</a>
+		</ul>
+	</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(".spe").click(function(){
+		console.log(1)
+		$(".box").slideDown()
+	})
+	$(".qiqiqi").click(function(){
+		$(".box").slideUp()
+	})
+	var pageHash = window.location.hash.slice(1);
+	console.log(pageHash)
+	if(pageHash){
+		$(".second-nav").children().children().eq(pageHash).css("background","#6EA145")
+		$(".box").children().children().children().eq(pageHash).css("background","#6EA145")
+	}
+</script>

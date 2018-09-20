@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+	</head>
+	<body>
+		<div class="footer">
+		  	<div class="container">
+		  		<div class="row">
+		  			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"><h3>Navigation</h3><br><div class="fo">Home<br>About<br>Services<br>Blog<br>Contact</div></div>
+		  			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"><h3>Members</h3><br><div class="fo">Customer Support<br>Platinum Support<br>Gold support<br>Standard Support<br>Traning</div></div>
+		  			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"><h3>Get In Touch</h3><br><div class="fo">Ola-ola street jump<br>260-14 City County<br>+62 000-0000-00</div></div>
+		  			<div class="col-lg-3 col-md-3 col-sm-3 hidden-xs"><h2>Spa<span>Magic Of Soul</span></h2><br>
+			  			<div>
+			  				<div class="icon1 icon"></div>
+			  				<div class="icon2 icon"></div>
+			  				<div class="icon3 icon"></div>
+			  			</div>
+			  				<div class="ll">
+			  					Copyright &copy; 2015 Company name All rights reserved.
+			  				</div>	
+		  			</div>
+		  			<div class="visible-xs">
+			  				<div class="mmn"><h3>Navigation<div class="glyphicon glyphicon-align-justify" id="bb1"></div></h3>
+			  							<div class="fo bl">Home<br>About<br>Services<br>Blog<br>Contact</div>
+			  				</div>
+			  				<div class="mmo"><h3>Members<div class="glyphicon glyphicon-align-justify" id="bb2"></div></h3>
+			  							<div class="fo k1">Customer Support<br>Platinum Support<br>Gold support<br>Standard Support<br>Traning</div>
+			  				</div>
+			  				<div class="mma"><h3>Get In Touch<div class="glyphicon glyphicon-align-justify" id="bb3"></div></h3>
+			  							<div class="fo n1">Ola-ola street jump<br>260-14 City County<br>+62 000-0000-00</div>
+			  				</div>
+			  			</div>	
+			  				
+		  			</div>
+		  		</div>
+		  		</div>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+	$("#bb1").click(function(){
+		$(".bl").show()
+		$(".k1").hide()
+		$(".n1").hide()
+	})
+	$("#bb2").click(function(){
+		$(".k1").show()
+		$(".bl").hide()
+		$(".n1").hide()
+		console.log(1)
+	})
+	$("#bb3").click(function(){
+		$(".n1").show()
+		$(".k1").hide()
+		$(".bl").hide()
+	})
+})
+</script>

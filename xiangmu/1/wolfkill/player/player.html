@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="header.css"/>
+		<link rel="stylesheet" type="text/css" href="player.css"/>
+		<script src="../js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="head3">
+			
+		</div>
+		
+		<div class="container">
+			<div class="title">
+				玩法研究所
+			</div>
+			<ul class="teach">
+				<li>游戏规则介绍</li>
+<!--				<li>原创特色玩法</li>	-->			
+			</ul>
+			<div class="manywords">
+				<p class="name"></p>
+				<p class="jieshao"></p>
+				<p class="play"></p>
+			</div>
+		<div class="bigbig">	
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：6人明牌局【明牌局·本局无警长】明牌局：玩家出局或死亡之后翻开身份牌【本局游戏配置】狼人阵营2狼人好人阵营2神：预言家、猎人2平民【角色介绍】狼人：每天夜里可以杀死一个人预言家：每天晚上可以查看一...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：10人速推局【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：12人标准场【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：12人进阶场【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：12人白狼王守卫【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：12人爱神局【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。...</span>
+				</div>
+			</div>
+			<div class="shikai">
+				<div class="rule">
+					<span class="rule-one">游戏规则介绍</span>
+					<span class="rule-two">规则介绍</span>
+					<span class="rule-three">App配置名称：12人摄梦人【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。...</span>
+				</div>
+			</div>
+		</div>	
+			
+			<div class="play-type">
+				<h2></h2>
+				<p>【明牌局·本局无警长】<br>明牌局：玩家出局或死亡之后翻开身份牌<br>【本局游戏配置】<br>狼人阵营<br>2狼人<br>好人阵营<br>2神：预言家、猎人<br>2平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>玩家发言60s，投票时间15s;遗言时间60s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠城，即所有好人死亡。<br>好人阵营：所有狼人死亡。</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type2">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营<br>3狼人<br>好人阵营<br>3神：预言家、女巫、猎人<br>3平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫在每天晚上<br>最多使用一瓶药，女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己<br>的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言60s，警长发言90s发言;<br>投票时间15s，遗言时间60s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家<br>都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type3">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营:<br>4狼人<br>4神：<br>预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，<br>解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，<br>女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，<br>免疫此次放逐，之后可以正常发言，但不能投票，<br>狼人扔需要击杀他一次才能让他死亡。<br>但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;<br>投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;<br>所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/langrensha/l0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type4">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营:<br>4狼人<br>4神：<br>预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，<br>解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，<br>女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，<br>免疫此次放逐，之后可以正常发言，但不能投票，<br>狼人扔需要击杀他一次才能让他死亡。<br>但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;<br>投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;<br>所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/langrensha/l0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type5">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营:<br>4狼人<br>4神：<br>预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，<br>解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，<br>女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，<br>免疫此次放逐，之后可以正常发言，但不能投票，<br>狼人扔需要击杀他一次才能让他死亡。<br>但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;<br>投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;<br>所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/langrensha/l0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type6">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营:<br>4狼人<br>4神：<br>预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，<br>解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，<br>女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，<br>免疫此次放逐，之后可以正常发言，但不能投票，<br>狼人扔需要击杀他一次才能让他死亡。<br>但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;<br>投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;<br>所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/langrensha/l0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+			<div class="play-type7">
+				<h2></h2>
+				<p>【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过<br>投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时<br>有1.5票。<br>【本局游戏配置】<br>狼人阵营:<br>4狼人<br>4神：<br>预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，<br>解药可以救活一名当晚被狼人杀害的玩家，<br>毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，<br>女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，<br>猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，<br>免疫此次放逐，之后可以正常发言，但不能投票，<br>狼人扔需要击杀他一次才能让他死亡。<br>但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;<br>投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;<br>所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　</p>
+				<div class="iiimg">
+					<img src="../img/haoren/h11.jpg"/>
+					<img src="../img/haoren/h2.jpg"/>
+					<img src="../img/haoren/h5.jpg"/>
+					<img src="../img/lanagrensha/l0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/langren/wolf0.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<img src="../img/haoren/h6.jpg"/>
+					<div class="return">
+						返回上一层
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$(".head3").load("header.html")
+		
+		$(".shikai").eq(0).click(function(){
+			$(".bigbig").hide()
+			$(".play-type").show()
+		$(".play-type h2").fadeIn(5000);
+		if($(".play-type h2").css("display")=="block"){
+			$(".play-type p").fadeIn(5000)
+		}
+		$(".play-type .iiimg img").fadeIn(5000)
+
+			$(".play-type .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		
+		$(".shikai").eq(1).click(function(){
+			$(".bigbig").hide()
+			$(".play-type2").show()
+		$(".play-type2 h2").fadeIn(5000);
+		if($(".play-type2 h2").css("display")=="block"){
+			$(".play-type2 p").fadeIn(5000)
+		}
+		$(".play-type2 .iiimg img").fadeIn(5000)
+
+			$(".play-type2 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type2 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type2 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type2 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type2 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type2 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type2 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type2 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type2 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type2 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type2").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		$(".shikai").eq(2).click(function(){
+			$(".bigbig").hide()
+			$(".play-type3").show()
+		$(".play-type3 h2").fadeIn(5000);
+		if($(".play-type3 h2").css("display")=="block"){
+			$(".play-type3 p").fadeIn(5000)
+		}
+		$(".play-type3 .iiimg img").fadeIn(5000)
+
+			$(".play-type3 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type3 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type3 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type3 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type3 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type3 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type3 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type3 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type3 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+			$(".play-type3 .iiimg img").eq(10).animate({
+				"top":960,
+				"left":220
+			})
+			$(".play-type3 .iiimg img").eq(11).animate({
+				"top":960,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type3 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type3").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		
+		$(".shikai").eq(3).click(function(){
+			$(".bigbig").hide()
+			$(".play-type4").show()
+		$(".play-type4 h2").fadeIn(5000);
+		if($(".play-type4 h2").css("display")=="block"){
+			$(".play-type4 p").fadeIn(5000)
+		}
+		$(".play-type4 .iiimg img").fadeIn(5000)
+
+			$(".play-type4 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type4 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type4 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type4 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type4 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type4 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type4 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type4 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type4 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+			$(".play-type4 .iiimg img").eq(10).animate({
+				"top":960,
+				"left":220
+			})
+			$(".play-type4 .iiimg img").eq(11).animate({
+				"top":960,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type4 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type4").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		$(".shikai").eq(4).click(function(){
+			$(".bigbig").hide()
+			$(".play-type5").show()
+		$(".play-type5 h2").fadeIn(5000);
+		if($(".play-type5 h2").css("display")=="block"){
+			$(".play-type5 p").fadeIn(5000)
+		}
+		$(".play-type5 .iiimg img").fadeIn(5000)
+
+			$(".play-type5 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type5 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type5 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type5 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type5 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type5 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type5 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type5 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type5 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+			$(".play-type5 .iiimg img").eq(10).animate({
+				"top":960,
+				"left":220
+			})
+			$(".play-type5 .iiimg img").eq(11).animate({
+				"top":960,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type5 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			$(".play-type5").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		$(".shikai").eq(5).click(function(){
+			$(".bigbig").hide()
+			$(".play-type6").show()
+		$(".play-type6 h2").fadeIn(5000);
+		if($(".play-type6 h2").css("display")=="block"){
+			$(".play-type6 p").fadeIn(5000)
+		}
+		$(".play-type6 .iiimg img").fadeIn(5000)
+
+			$(".play-type6 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type6 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type6 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type6 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type6 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type6 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type6 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type6 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type6 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+			$(".play-type6 .iiimg img").eq(10).animate({
+				"top":960,
+				"left":220
+			})
+			$(".play-type6 .iiimg img").eq(11).animate({
+				"top":960,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type6 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type6").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		$(".shikai").eq(6).click(function(){
+			$(".bigbig").hide()
+			$(".play-type7").show()
+		$(".play-type7 h2").fadeIn(5000);
+		if($(".play-type7 h2").css("display")=="block"){
+			$(".play-type7 p").fadeIn(5000)
+		}
+		$(".play-type7 .iiimg img").fadeIn(5000)
+
+			$(".play-type7 .iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".play-type7 .iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".play-type7 .iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".play-type7 .iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".play-type7 .iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			$(".play-type7 .iiimg img").eq(6).animate({
+				"top":640,
+				"left":0
+			})
+			$(".play-type7 .iiimg img").eq(7).animate({
+				"top":640,
+				"left":220
+			})
+			$(".play-type7 .iiimg img").eq(8).animate({
+				"top":640,
+				"left":440
+			})
+			$(".play-type7 .iiimg img").eq(9).animate({
+				"top":960,
+				"left":0
+			})
+			$(".play-type7 .iiimg img").eq(10).animate({
+				"top":960,
+				"left":220
+			})
+			$(".play-type7 .iiimg img").eq(11).animate({
+				"top":960,
+				"left":440
+			})
+		})
+		$(".return").click(function(){
+			 $(".play-type7 .iiimg img").animate({
+			    	"top":0,
+			    	"left":0
+			    },1000)
+			
+			
+			$(".play-type7").fadeOut(2000)
+			$(".bigbig").show(4000)
+		})
+		/*$(".play-type").show()
+		$(".play-type h2").fadeIn(5000);
+		console.log($(".play-type h2").css("display"))
+		if($(".play-type h2").css("display")=="block"){
+			$(".play-type p").fadeIn(5000)
+		}
+		$(".iiimg img").fadeIn(5000)
+
+			$(".iiimg img").eq(1).animate({
+				"top":0,
+				"left":220
+			})
+			$(".iiimg img").eq(2).animate({
+				"top":0,
+				"left":440
+			})
+			$(".iiimg img").eq(3).animate({
+				"top":320,
+				"left":0
+			})
+			$(".iiimg img").eq(4).animate({
+				"top":320,
+				"left":220
+			})
+			$(".iiimg img").eq(5).animate({
+				"top":320,
+				"left":440
+			})
+			
+			$(".iiimg img").click(function(){
+			    
+			})*/
+			
+
+		
+		/*var str="App配置名称：6人明牌局"
+		var str2 = "【明牌局·本局无警长】<br>明牌局：玩家出局或死亡之后翻开身份牌<br>【本局游戏配置】<br>狼人阵营<br>2狼人<br>好人阵营<br>2神：预言家、猎人<br>2平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>玩家发言60s，投票时间15s;遗言时间60s，狼人自爆30s遗言;【遗言规则】晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠城，即所有好人死亡。<br>好人阵营：所有狼人死亡。"
+		var strT = "App配置名称：10人速推局"
+		var strT2 = "【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。<br>【本局游戏配置】<br>狼人阵营<br>3狼人<br>好人阵营<br>3神：预言家、女巫、猎人<br>3平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫在每天晚上最多使用一瓶药，女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言60s，警长发言90s发言;<br>投票时间15s，遗言时间60s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"　　
+		var strFour = "App配置名称：12人标准场"
+		var strFour2 = "【暗牌局·本局有警长】<br>暗牌局：玩家出局或死亡之后不翻开身份牌<br>警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。<br>【本局游戏配置】<br>狼人阵营<br>4狼人<br>好人阵营<br>4神：预言家、女巫、猎人、白痴<br>4平民<br>【角色介绍】<br>狼人：每天夜里可以杀死一个人<br>预言家：每天晚上可以查看一名玩家的身份是好人还是狼人<br>女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，女巫不可自救<br>猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家<br>tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;<br>白痴：白痴若是被投票出局，可以翻开自己的身份牌，免疫此次放逐，之后可以正常发言，但不能投票，狼人扔需要击杀他一次才能让他死亡。但若是白痴因非投票死亡原因，则无法发动技能，立即死亡<br>平民：没有任何能力，一觉睡到天亮<br>【时间设定】<br>上警时间15s，玩家发言120s，警长发言150s发言;投票时间15s，遗言时间120s，狼人自爆30s遗言;<br>【遗言规则】<br>晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;<br>【胜利条件】<br>狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。<br>好人阵营：所有狼人死亡。"
+		var strFive = "App配置名称：12人进阶场"
+		var strFive3 = "【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。【本局游戏配置】狼人阵营1狼王、3狼人好人阵营4神：预言家、女巫、猎人、守卫4平民【角色介绍】狼王：属于狼人阵营，具有死后开枪技能tips：被猎人带走依然可以开枪，殉情和被毒杀不能开枪;狼人：每天夜里可以杀死一个人预言家：每天晚上可以查看一名玩家的身份是好人还是狼人女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，女巫不可自救猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;守卫：每晚可以守护一名玩家，但不能连续两晚守护同一个名玩家。被守卫守护的玩家当晚不会被狼人杀害平民：没有任何能力，一觉睡到天亮【时间设定】上警时间15s，玩家发言120s，警长发言150s发言;投票时间15s，遗言时间120s，狼人自爆30s遗言;【遗言规则】晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;【胜利条件】狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。好人阵营：所有狼人死亡。"
+		var strSix = "App配置名称：12人白狼王守卫"
+		var strSix2 = "【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。【本局游戏配置】狼人阵营1白狼王、3狼人好人阵营4神：预言家、女巫、猎人、守卫4平民【角色介绍】白狼王：属于狼人阵营，白狼王可以在白天自爆的时候，选择带走一名玩家，非自爆出局不得发动技能狼人：每天夜里可以杀死一个人预言家：每天晚上可以查看一名玩家的身份是好人还是狼人女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，女巫不可自救猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;白痴：白痴若是被投票出局，可以翻开自己的身份牌，免疫此次放逐，之后可以正常发言，但不能投票，狼人扔需要击杀他一次才能让他死亡。但若是白痴因非投票死亡原因，则无法发动技能，立即死亡平民：没有任何能力，一觉睡到天亮【时间设定】上警时间15s，玩家发言120s，警长发言150s发言;投票时间15s，遗言时间120s，狼人自爆30s遗言;【遗言规则】晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;【胜利条件】狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。好人阵营：所有狼人死亡。"
+		var strSeven = "App配置名称：12人爱神局"
+		var strSeven2 = "【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。【本局游戏配置】1盗贼1丘比特狼人阵营1狼王、2狼人好人阵营4神：预言家、女巫、猎人、白痴5平民【角色介绍】盗贼：上帝从所有身份牌中随机抽取两张，并将其他身份牌正常发放，第一晚盗贼最先睁眼，上帝向他展示这两张身份牌，盗贼从中选择一张作为自己的身份，另一张则作废，若两张身份牌中存在狼人则盗贼必须选择狼人丘比特：在第一天晚上可以把两名玩家设为情侣，这两名玩家若是其中一名死去，另一名也要跟着殉情，第一天晚上情侣睁眼互相确认，丘比特无法得知情侣的具体身份狼王：属于狼人阵营，具有死后开枪技能tips：被猎人带走依然可以开枪，殉情和被毒杀不能开枪;狼人：每天夜里可以杀死一个人预言家：每天晚上可以查看一名玩家的身份是好人还是狼人女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，女巫不可自救猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;守卫：每晚可以守护一名玩家，但不能连续两晚守护同一个名玩家。被守卫守护的玩家当晚不会被狼人杀害平民：没有任何能力，一觉睡到天亮【时间设定】上警时间15s，玩家发言120s，警长发言150s发言;投票时间15s，遗言时间120s，狼人自爆30s遗言;【遗言规则】晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;【胜利条件】狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。好人阵营：所有狼人死亡。第三方阵营：丘比特跟情侣组成第三方阵营时(狼+丘比特或者情侣是狼+好人)，需要屠城，即所有狼人及好人死亡;若情侣为好人阵营则丘比特跟好人阵营获胜条件一样;若情侣为狼人阵营则丘比特跟狼人阵营获胜条件一样。"
+		var strEight = "App配置名称：12人摄梦人"
+		var strEight2 = "【暗牌局·本局有警长】暗牌局：玩家出局或死亡之后不翻开身份牌警长：附加身份牌，游戏开始后第一天从所有玩家中通过投票选举一名玩家授予警长，警长在白天最后一个发言并且投票时有1.5票。【本局游戏配置】狼人阵营1狼王、3狼人好人阵营4神：预言家、女巫、猎人、摄梦人4平民【角色介绍】狼王：属于狼人阵营，具有死后开枪技能tips：被猎人带走依然可以开枪，殉情和被毒杀不能开枪狼人：每天夜里可以杀死一个人预言家：每天晚上可以查看一名玩家的身份是好人还是狼人女巫：女巫拥有两瓶药，解药可以救活一名当晚被狼人杀害的玩家，毒药可以毒杀一名玩家，女巫再每天晚上最多使用一瓶药，女巫不可自救猎人：当且仅当猎人被狼人杀害或被投票放逐时，猎人可以亮出自己的身份牌并指定枪杀一名玩家tips：被狼王带走可以开枪，但被女巫毒杀不可开枪;摄梦人：摄梦人每晚可以选择一名玩家摄梦，被摄梦人摄梦的玩家被称为梦游者。tips：1.如果狼人当天晚上刀中梦游者则视为空刀，狼人刀中摄梦人则梦游者同归于2.摄梦人连续两晚摄梦同一个人则梦游者死，被摄梦两晚的梦游者女巫救不活;3.梦游者免疫夜间技能(狼刀 救药 毒药 子弹，均视为技能已使用但落空);4.女巫救摄梦人 那么摄梦人与梦游者同时被救，女巫毒摄梦人摄梦人与梦游者同时身亡;5.摄梦人如果摄梦到狼人，且正好被刀，则那只狼人一同死去;6.摄梦人不能选择不发动技能，梦游者不知道自己梦游，被摄梦人摄梦死亡的神和狼王不能发动技能;平民：没有任何能力，一觉睡到天亮【时间设定】上警时间15s，玩家发言120s，警长发言150s发言;投票时间15s，遗言时间120s，狼人自爆30s遗言;【遗言规则】晚上死亡的玩家，只有首夜有遗言;所有白天死亡的玩家都有遗言;【胜利条件】狼人阵营：屠边，即杀死所有神职牌，或者杀死所有的平民玩家。好人阵营：所有狼人死亡。"
+*/
+		var str="App配置名称：6人明牌局";
+		var len=str.length;
+		var i=1;
+		var time = null;
+		time = setInterval(function(){
+			$(".play-type h2")[0].innerHTML = str.substr(0,i);
+			i++;
+			if(i>len){
+				clearInterval(time);
+			}
+		},500)
+		
+		var str2="App配置名称：10人速推局";
+		var len2=str2.length;
+		var o=1;
+		var time = null;
+		time2 = setInterval(function(){
+			$(".play-type2 h2")[0].innerHTML = str2.substr(0,o);
+			o++;
+			if(i>len2){
+				clearInterval(time2);
+			}
+		},500)
+		var str3="App配置名称：12人标准局";
+		var len3=str3.length;
+		var p=1;
+		var time = null;
+		time3 = setInterval(function(){
+			$(".play-type3 h2")[0].innerHTML = str3.substr(0,p);
+			p++;
+			if(p>len3){
+				clearInterval(time3);
+			}
+		},500)
+		var str4="App配置名称：12人进阶场";
+		var len4=str4.length;
+		var q=1;
+		var time = null;
+		time4 = setInterval(function(){
+			$(".play-type4 h2")[0].innerHTML = str4.substr(0,q);
+			q++;
+			if(q>len4){
+				clearInterval(time4);
+			}
+		},500)
+		var str5="App配置名称：12人白狼王守卫";
+		var len5=str5.length;
+		var r=1;
+		var time = null;
+		time5 = setInterval(function(){
+			$(".play-type5 h2")[0].innerHTML = str5.substr(0,r);
+			r++;
+			if(r>len5){
+				clearInterval(time5);
+			}
+		},500)
+		var str6="App配置名称：12人爱神局";
+		var len6=str6.length;
+		var s=1;
+		var time = null;
+		time6 = setInterval(function(){
+			$(".play-type6 h2")[0].innerHTML = str6.substr(0,s);
+			s++;
+			if(s>len6){
+				clearInterval(time6);
+			}
+		},500)
+		var str7="App配置名称：12人摄梦人";
+		var len7=str7.length;
+		var t=1;
+		var time = null;
+		time7 = setInterval(function(){
+			$(".play-type7 h2")[0].innerHTML = str7.substr(0,t);
+			t++;
+			if(t>len7){
+				clearInterval(time7);
+			}
+		},500)
+		
+		
+		
+		
+		
+		
+	})
+</script>

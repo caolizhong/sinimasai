@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.7-dist/css/bootstrap.min.css"/>
+		<script src="js/jquery-1.12.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" type="text/css" href="css/five.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/foot.css"/>
+	</head>
+	<body>
+		<div class="head-five">
+			
+		</div>
+		<div class="container" >
+			<div class="row">
+				<h1 class="text-success">Context us</h1>
+				<div class="map" style="height: 400px;"id="container2">
+					
+				</div>
+			</div>
+			<ul>
+				<li class="col-xs-4">
+					<p class="text-success">Address:</p>
+					<p>email</p>
+					<p>telephone</p>
+					<p>mobile</p>
+					<p>fax</p>
+				</li>
+				<li class="col-xs-8">
+					<h3 class="text-success">Contex form</h3>
+					<div class="row">
+					  <div class="col-xs-4">
+					    <input type="text" class="form-control" placeholder="name">
+					  </div>
+					  <div class="col-xs-4">
+					    <input type="text" class="form-control" placeholder="email">
+					  </div>
+					  <div class="col-xs-4">
+					    <input type="text" class="form-control" placeholder="telephone">
+					    
+					  </div>
+					  
+					</div>
+					<textarea class="form-control" rows="3" style="margin-top: 20px;"></textarea>
+					<button type="button" class="btn btn-success btn-a" style="margin-top: 20px;">Submit</button>
+				</li>
+			</ul>
+		</div>
+		<div class="foot-five">
+			
+		</div>
+	</body>
+</html>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH"></script>     
+<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="js/jquery.baiduMap.min.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript">
+	$(function(){
+		$(".foot-five").load("foot.html")
+		$(".head-five").load("header.html")
+		new BaiduMap({
+					id: "container2",
+					title: {
+						text: "南京",
+						className: "title"// 选填--样式类名
+					},
+					content: {
+						className: "content",// 选填--样式类名
+						text: ["地址：南京市玄武区珠江大厦10楼B1", "电话：(888)88888888"]
+					},
+					point: {
+						lng: "118.7988334688",
+						lat: "32.0552612648"
+					},
+					level: 15,//  选填--地图级别--(默认15)
+					zoom:true,// 选填--是否启用鼠标滚轮缩放功能--(默认false)
+					type: ["地图", "卫星", "三维"],// 选填--显示地图类型--(默认不显示)
+					width: 320,// 选填--信息窗口width--(默认自动调整)
+					height: 70,// 选填--信息窗口height--(默认自动调整)
+					icon: {    // 选填--自定义icon图标
+						url: "img/icon.png",
+						width: 36,
+						height: 36
+					}
+			 });
+	})
+	window.onload = function(){
+//		$(".second-nav").children().children().eq(4).css("background","#6EA145")
+	}
+</script>
